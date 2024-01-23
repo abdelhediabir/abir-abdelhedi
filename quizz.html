@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="style.css">
+    <title>Web Development Quiz</title>
+	<style>
+		body {
+    
+    text-align: center;
+}
+
+#quiz-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	
+}
+
+#question-container {
+    text-align: left;
+	left:10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#result-container {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+	</style>
+</head>
+<body>
+<header>
+	
+		<nav>
+		<a href="accueil.html">Accueil</a>
+		<a href="parcours.html">  Parcours académique</a>
+		<a href="compétences.html"> Compétences</a>
+		<a href="stage.html"> Stage</a>
+		
+		<a href="quizz.html">Quizz </a>
+		<a href="contact.html">Contact </a>
+	</nav>
+	</header>
+	<section>
+    <div id="quiz-container">
+        <div id="question-container">
+            <div class="question">
+                <p>1. Quel langage est utilisé pour styliser une page web ?</p>
+                <label>
+                    <input type="radio" name="question0" value="a">
+                    HTML
+                </label><br>
+                <label>
+                    <input type="radio" name="question0" value="b">
+                    CSS
+                </label><br>
+                <label>
+                    <input type="radio" name="question0" value="c">
+                    JavaScript
+                </label><br><br>
+            </div>
+            <div class="question">
+                <p>2. Quel langage est utilisé pour rendre une page web interactive ?</p>
+                <label>
+                    <input type="radio" name="question1" value="a">
+                    HTML
+                </label><br>
+                <label>
+                    <input type="radio" name="question1" value="b">
+                    CSS
+                </label><br>
+                <label>
+                    <input type="radio" name="question1" value="c">
+                    JavaScript
+                </label><br><br>
+            </div>
+            <!-- Ajoutez d'autres questions ici -->
+        </div>
+        <button id="submit-button">resulat</button>
+        <div id="result-container"></div>
+    </div>
+</section>
+
+
+
+
+    <script src="script.js">
+		
+	</script>
+</body>
+</html>

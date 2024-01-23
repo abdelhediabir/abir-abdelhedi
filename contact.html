@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<link rel="stylesheet" href="style.css">
+
+	</head>
+	<body>
+	<header>
+	<nav>
+		<nav>
+		<a href="accueil.html">Accueil</a>
+		<a href="parcours.html">  Parcours académique</a>
+		<a href="compétences.html"> Compétences</a>
+		<a href="stage.html"> Stage</a>
+		
+		<a href="quizz.html">Quizz </a>
+		<a href="contact.html">Contact </a>
+	</nav>
+	</nav>
+<div class="contact-info">
+       <p><a class="whatsapp-link" href="https://wa.me/0123456789" target="_blank">Contacter par WhatsApp</a></p>
+	<p><a class="email-link" href="mailto:abirabdelhedi541@gmail.com" target="_blank">Contacter par E-mail</a></p>
+
+  
+    </div>
+
+	
+	<form id="contactForm" action="https://formspree.io/votre-email@example.com" method="POST">
+
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-mail :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Sujet :</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="button" onclick="submitForm()">Envoyer</button>
+</form>
+
+
+
+
+<script>
+    function submitForm() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+
+        // Affiche les valeurs dans la console (remplacez cela par une logique d'envoi côté serveur)
+        console.log('Nom:', name);
+        console.log('E-mail:', email);
+        console.log('Sujet:', subject);
+        console.log('Message:', message);
+
+        alert('message envoyer');
+    }
+</script>
+	</header>
+	</body>
+	</html>
